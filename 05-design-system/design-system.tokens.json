@@ -1,0 +1,258 @@
+
+{
+  "meta": {
+    "artifact": "Design System Tokens",
+    "producingAgent": "05 - Design System",
+    "project": "FidNext Technologies Website",
+    "status": "REVIEW_PENDING",
+    "lastUpdated": "2026-09-03",
+    "version": "1.0.0",
+    "notes": "Brand-specific values not explicitly approved by Agent 04 are marked as REQUIRES_INPUT. System defaults are explicitly identified as pending validation."
+  },
+  "colors": {
+    "brand": {
+      "primary": "REQUIRES_INPUT",
+      "secondary": "REQUIRES_INPUT",
+      "accent": "REQUIRES_INPUT"
+    },
+    "background": {
+      "primary": "REQUIRES_INPUT",
+      "secondary": "REQUIRES_INPUT",
+      "inverse": "REQUIRES_INPUT"
+    },
+    "text": {
+      "primary": "REQUIRES_INPUT",
+      "secondary": "REQUIRES_INPUT",
+      "muted": "REQUIRES_INPUT",
+      "inverse": "REQUIRES_INPUT"
+    },
+    "border": {
+      "default": "REQUIRES_INPUT",
+      "strong": "REQUIRES_INPUT",
+      "focus": "REQUIRES_INPUT",
+      "divider": "REQUIRES_INPUT"
+    },
+    "state": {
+      "success": "REQUIRES_INPUT",
+      "warning": "REQUIRES_INPUT",
+      "error": "REQUIRES_INPUT",
+      "info": "REQUIRES_INPUT"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "heading": "REQUIRES_INPUT",
+      "body": "REQUIRES_INPUT",
+      "ui": "REQUIRES_INPUT"
+    },
+    "levels": {
+      "display": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "h1": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "h2": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "h3": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "h4": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "bodyLarge": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "body": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "bodySmall": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "label": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      },
+      "caption": {
+        "fontSize": "REQUIRES_INPUT",
+        "fontWeight": "REQUIRES_INPUT",
+        "lineHeight": "REQUIRES_INPUT",
+        "letterSpacing": "REQUIRES_INPUT"
+      }
+    }
+  },
+  "spacing": {
+    "space-1": "8px",
+    "space-2": "16px",
+    "space-3": "24px",
+    "space-4": "32px",
+    "space-5": "40px",
+    "space-6": "48px",
+    "space-7": "64px",
+    "space-8": "80px",
+    "space-9": "96px",
+    "space-10": "128px"
+  },
+  "sectionSpacing": {
+    "compact": "48px-64px",
+    "standard": "72px-96px",
+    "major": "96px-128px"
+  },
+  "breakpoints": {
+    "mobile": {
+      "min": "0px",
+      "max": "767px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    },
+    "tablet": {
+      "min": "768px",
+      "max": "1023px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    },
+    "desktop": {
+      "min": "1024px",
+      "max": "1279px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    },
+    "largeDesktop": {
+      "min": "1280px",
+      "max": null,
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    }
+  },
+  "containers": {
+    "pageMax": {
+      "value": "1280px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    },
+    "contentMax": {
+      "value": "1200px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    },
+    "readingMax": {
+      "value": "720px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    }
+  },
+  "grid": {
+    "mobile": {
+      "columns": 4,
+      "gutter": "16px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    },
+    "tablet": {
+      "columns": 8,
+      "gutter": "24px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    },
+    "desktop": {
+      "columns": 12,
+      "gutter": "24px",
+      "status": "SYSTEM_DEFAULT_PENDING_VALIDATION"
+    }
+  },
+  "radius": {
+    "none": "0px",
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "full": "9999px",
+    "status": "SYSTEM_DEFAULT_PENDING_VISUAL_VALIDATION"
+  },
+  "borders": {
+    "widthDefault": "1px",
+    "widthStrong": "2px",
+    "style": "solid",
+    "colorDefault": "REQUIRES_INPUT",
+    "colorStrong": "REQUIRES_INPUT",
+    "colorFocus": "REQUIRES_INPUT"
+  },
+  "shadows": {
+    "none": "none",
+    "sm": "REQUIRES_INPUT",
+    "md": "REQUIRES_INPUT",
+    "lg": "REQUIRES_INPUT",
+    "xl": "REQUIRES_INPUT",
+    "status": "SYSTEM_DEFAULT_PENDING_VISUAL_VALIDATION"
+  },
+  "motion": {
+    "duration": {
+      "fast": "150ms",
+      "normal": "250ms",
+      "slow": "400ms"
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.2, 0.8, 0.2, 1)"
+    },
+    "reducedMotion": {
+      "enabled": true,
+      "rule": "Minimize or remove non-essential animation when prefers-reduced-motion is enabled."
+    },
+    "status": "SYSTEM_DEFAULT_PENDING_INTERACTION_VALIDATION"
+  },
+  "zIndex": {
+    "base": 0,
+    "content": 1,
+    "sticky": 20,
+    "header": 30,
+    "dropdown": 40,
+    "modal": 60,
+    "toast": 70
+  },
+  "icons": {
+    "library": "REQUIRES_INPUT",
+    "style": "Consistent simple iconography",
+    "strokeWeight": "REQUIRES_INPUT",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "40px"
+    }
+  },
+  "components": {
+    "button": {
+      "minTouchTarget": "44px",
+      "status": "SYSTEM_DEFAULT_PENDING_IMPLEMENTATION_VALIDATION"
+    },
+    "form": {
+      "fieldSpacing": "16px",
+      "status": "SYSTEM_DEFAULT_PENDING_IMPLEMENTATION_VALIDATION"
+    },
+    "card": {
+      "radius": "{radius.md}",
+      "shadow": "{shadows.sm}",
+      "status": "SYSTEM_DEFAULT_PENDING_VISUAL_VALIDATION"
+    }
+  }
+}
+

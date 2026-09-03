@@ -1,0 +1,749 @@
+
+{
+  "meta": {
+    "artifact": "Design System Components",
+    "producingAgent": "05 - Design System",
+    "project": "FidNext Technologies Website",
+    "status": "REVIEW_PENDING",
+    "lastUpdated": "2026-09-03",
+    "version": "1.0.0"
+  },
+  "components": [
+    {
+      "id": "LOGO-001",
+      "name": "Logo",
+      "category": "foundation",
+      "purpose": "Display FidNext Technologies brand identity.",
+      "variants": ["default", "compact"],
+      "states": ["default"],
+      "props": ["variant", "href", "alt"],
+      "responsive": {
+        "mobile": "Use compact or appropriately scaled version.",
+        "tablet": "Maintain standard brand presentation.",
+        "desktop": "Use standard brand presentation."
+      },
+      "accessibility": {
+        "requirements": [
+          "Provide meaningful alternative text.",
+          "If clickable, expose the destination through an accessible link."
+        ]
+      },
+      "usageRules": [
+        "Use the approved FidNext logo asset.",
+        "Do not distort or recolor without approval."
+      ]
+    },
+    {
+      "id": "BTN-001",
+      "name": "PrimaryButton",
+      "category": "conversion",
+      "purpose": "Primary conversion action.",
+      "variants": ["filled"],
+      "sizes": ["small", "medium", "large"],
+      "states": ["default", "hover", "focus", "active", "disabled", "loading"],
+      "props": ["label", "href", "type", "disabled", "loading", "icon"],
+      "responsive": {
+        "mobile": "Maintain touch-friendly target and adapt width when necessary.",
+        "tablet": "Maintain standard button sizing.",
+        "desktop": "Use standard button sizing."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use a semantic button or link.",
+          "Provide visible focus state.",
+          "Do not communicate state through color alone.",
+          "Loading state must prevent duplicate submission where applicable."
+        ]
+      },
+      "usageRules": [
+        "Use for the highest-priority action.",
+        "Primary homepage conversion is Book a Free Consultation."
+      ]
+    },
+    {
+      "id": "BTN-002",
+      "name": "SecondaryButton",
+      "category": "conversion",
+      "purpose": "Secondary navigation or exploration action.",
+      "variants": ["outline", "secondary"],
+      "sizes": ["small", "medium", "large"],
+      "states": ["default", "hover", "focus", "active", "disabled"],
+      "props": ["label", "href", "type", "disabled", "icon"],
+      "responsive": {
+        "mobile": "Stack or expand where required by layout.",
+        "tablet": "Maintain hierarchy with primary button.",
+        "desktop": "Use alongside primary actions when appropriate."
+      },
+      "accessibility": {
+        "requirements": [
+          "Provide visible focus.",
+          "Use semantic link or button based on behavior."
+        ]
+      },
+      "usageRules": [
+        "Use for lower-priority actions such as View Our Work."
+      ]
+    },
+    {
+      "id": "BTN-003",
+      "name": "TextButton",
+      "category": "conversion",
+      "purpose": "Low-emphasis action.",
+      "variants": ["default"],
+      "sizes": ["small", "medium"],
+      "states": ["default", "hover", "focus", "active", "disabled"],
+      "props": ["label", "href", "disabled"],
+      "responsive": {
+        "mobile": "Maintain sufficient touch target.",
+        "tablet": "Maintain standard presentation.",
+        "desktop": "Use for secondary contextual actions."
+      },
+      "accessibility": {
+        "requirements": [
+          "Provide visible focus.",
+          "Maintain adequate text contrast."
+        ]
+      },
+      "usageRules": [
+        "Do not use when the action requires primary visual emphasis."
+      ]
+    },
+    {
+      "id": "BTN-004",
+      "name": "IconButton",
+      "category": "conversion",
+      "purpose": "Compact interactive control.",
+      "variants": ["default"],
+      "sizes": ["small", "medium", "large"],
+      "states": ["default", "hover", "focus", "active", "disabled"],
+      "props": ["icon", "ariaLabel", "disabled"],
+      "responsive": {
+        "mobile": "Maintain touch target of at least 44px.",
+        "tablet": "Maintain accessible target.",
+        "desktop": "Use compact control when appropriate."
+      },
+      "accessibility": {
+        "requirements": [
+          "Always provide an accessible name.",
+          "Do not rely on icon shape alone."
+        ]
+      },
+      "usageRules": [
+        "Use for mobile menu, close, and utility controls."
+      ]
+    },
+    {
+      "id": "LINK-001",
+      "name": "TextLink",
+      "category": "navigation",
+      "purpose": "Inline or contextual navigation.",
+      "variants": ["default", "muted"],
+      "states": ["default", "hover", "focus", "active"],
+      "props": ["label", "href", "external"],
+      "responsive": {
+        "mobile": "Preserve readable text and touch usability.",
+        "tablet": "Standard.",
+        "desktop": "Standard."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use semantic anchor elements.",
+          "Ensure visible focus."
+        ]
+      },
+      "usageRules": [
+        "Link text should communicate destination clearly."
+      ]
+    },
+    {
+      "id": "HDR-001",
+      "name": "Header",
+      "category": "navigation",
+      "purpose": "Global site navigation and primary conversion access.",
+      "variants": ["desktop", "mobile"],
+      "states": ["default", "scrolled", "mobileMenuOpen", "focus"],
+      "props": ["logo", "navigationItems", "primaryCta"],
+      "responsive": {
+        "mobile": "Collapse navigation into mobile menu.",
+        "tablet": "Adapt navigation according to available space.",
+        "desktop": "Display full navigation and primary CTA."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use semantic header and nav elements.",
+          "Mobile menu must be keyboard accessible.",
+          "Provide accessible menu state."
+        ]
+      },
+      "usageRules": [
+        "Primary CTA should remain visually prominent."
+      ]
+    },
+    {
+      "id": "NAV-001",
+      "name": "Navigation",
+      "category": "navigation",
+      "purpose": "Provide access to primary site sections.",
+      "variants": ["desktop", "mobile"],
+      "states": ["default", "hover", "focus", "active", "expanded"],
+      "props": ["items", "activeItem"],
+      "responsive": {
+        "mobile": "Use collapsible navigation.",
+        "tablet": "Adapt item spacing.",
+        "desktop": "Display full navigation."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use semantic navigation.",
+          "Keyboard navigation required.",
+          "Current page should be identifiable."
+        ]
+      },
+      "usageRules": [
+        "Core navigation includes Services, How We Work, Technology, About, and Contact."
+      ]
+    },
+    {
+      "id": "FTR-001",
+      "name": "Footer",
+      "category": "navigation",
+      "purpose": "Provide secondary navigation, contact context, and conversion support.",
+      "variants": ["default"],
+      "states": ["default", "focus"],
+      "props": ["navigationGroups", "contact", "cta", "legal"],
+      "responsive": {
+        "mobile": "Stack footer groups vertically.",
+        "tablet": "Use simplified multi-column layout.",
+        "desktop": "Use structured multi-column layout."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use semantic footer element.",
+          "Maintain logical heading structure."
+        ]
+      },
+      "usageRules": [
+        "Do not invent contact details or claims."
+      ]
+    },
+    {
+      "id": "HERO-001",
+      "name": "Hero",
+      "category": "content",
+      "purpose": "Communicate positioning, value proposition, and primary conversion action.",
+      "variants": ["default"],
+      "states": ["default"],
+      "props": ["eyebrow", "heading", "description", "primaryCta", "secondaryCta", "media"],
+      "responsive": {
+        "mobile": "Single-column priority order with CTA prominence.",
+        "tablet": "Reduce horizontal complexity while preserving hierarchy.",
+        "desktop": "Use strong editorial/grid-based composition."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use one primary H1.",
+          "Ensure CTA labels are descriptive.",
+          "Provide meaningful alternative text for media."
+        ]
+      },
+      "usageRules": [
+        "Primary heading direction: Build Better Technology. Move Your Business Forward.",
+        "Primary CTA: Book a Free Consultation.",
+        "Do not add unverified proof metrics."
+      ]
+    },
+    {
+      "id": "SEC-001",
+      "name": "SectionHeader",
+      "category": "content",
+      "purpose": "Establish section hierarchy.",
+      "variants": ["default", "withEyebrow", "withCta"],
+      "states": ["default"],
+      "props": ["eyebrow", "heading", "description", "cta"],
+      "responsive": {
+        "mobile": "Stack heading and supporting content.",
+        "tablet": "Preserve hierarchy.",
+        "desktop": "Use editorial alignment."
+      },
+      "accessibility": {
+        "requirements": [
+          "Maintain logical heading levels.",
+          "Do not skip heading levels for styling."
+        ]
+      },
+      "usageRules": [
+        "Use consistently across major sections."
+      ]
+    },
+    {
+      "id": "CARD-001",
+      "name": "BaseCard",
+      "category": "content",
+      "purpose": "Reusable container for structured content.",
+      "variants": ["default"],
+      "states": ["default", "hover", "focus"],
+      "props": ["title", "description", "media", "content", "action"],
+      "responsive": {
+        "mobile": "Stack content and maintain readable padding.",
+        "tablet": "Adapt card grid.",
+        "desktop": "Use within structured content grids."
+      },
+      "accessibility": {
+        "requirements": [
+          "Do not make a non-interactive card appear interactive.",
+          "Interactive cards require keyboard-accessible behavior."
+        ]
+      },
+      "usageRules": [
+        "Avoid excessive card usage.",
+        "Do not use cards merely for decoration."
+      ]
+    },
+    {
+      "id": "SRV-001",
+      "name": "ServiceBlock",
+      "category": "content",
+      "purpose": "Present FidNext service capabilities.",
+      "variants": ["default", "featured"],
+      "states": ["default", "hover", "focus"],
+      "props": ["title", "description", "icon", "cta", "status"],
+      "responsive": {
+        "mobile": "Stack service blocks.",
+        "tablet": "Use responsive grid.",
+        "desktop": "Use structured service grid."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use semantic headings.",
+          "Interactive actions must be keyboard accessible."
+        ]
+      },
+      "usageRules": [
+        "Confirmed services: Software Consulting and Custom Software Development.",
+        "Proposed services must be validation-gated.",
+        "Do not present unvalidated capabilities as confirmed facts."
+      ]
+    },
+    {
+      "id": "PRB-001",
+      "name": "ProblemBlock",
+      "category": "content",
+      "purpose": "Present customer problems and pain points.",
+      "variants": ["default"],
+      "states": ["default", "hover"],
+      "props": ["title", "description", "icon"],
+      "responsive": {
+        "mobile": "Single-column.",
+        "tablet": "Responsive grid.",
+        "desktop": "Structured problem grid."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use meaningful headings and text.",
+          "Do not rely on decorative icons to convey meaning."
+        ]
+      },
+      "usageRules": [
+        "Focus on business problems and clarity.",
+        "Avoid unnecessary technical jargon."
+      ]
+    },
+    {
+      "id": "PRC-001",
+      "name": "ProcessStep",
+      "category": "content",
+      "purpose": "Communicate FidNext delivery and Agile process.",
+      "variants": ["default", "numbered"],
+      "states": ["default", "active"],
+      "props": ["number", "title", "description"],
+      "responsive": {
+        "mobile": "Stack vertically.",
+        "tablet": "Use responsive process layout.",
+        "desktop": "Use horizontal or structured grid layout."
+      },
+      "accessibility": {
+        "requirements": [
+          "Process order must remain understandable without visual styling."
+        ]
+      },
+      "usageRules": [
+        "Approved themes include Iterative Development, Cross-Functional Teams, Customer Collaboration, and Continuous Improvement."
+      ]
+    },
+    {
+      "id": "TEC-001",
+      "name": "TechnologyItem",
+      "category": "content",
+      "purpose": "Present confirmed technology expertise.",
+      "variants": ["default"],
+      "states": ["default", "hover", "focus"],
+      "props": ["name", "icon", "description", "href"],
+      "responsive": {
+        "mobile": "Use compact responsive grid or list.",
+        "tablet": "Use responsive grid.",
+        "desktop": "Use structured technology presentation."
+      },
+      "accessibility": {
+        "requirements": [
+          "Technology names must be readable as text.",
+          "Icons must not be the sole source of information."
+        ]
+      },
+      "usageRules": [
+        "Confirmed references include Web Development, Android, iOS, Cloud Applications, Java, React Native, and Python.",
+        "Do not imply unsupported expertise."
+      ]
+    },
+    {
+      "id": "CAS-001",
+      "name": "CaseStudyCard",
+      "category": "content",
+      "purpose": "Present verified project or case-study information.",
+      "variants": ["default", "featured"],
+      "states": ["default", "hover", "focus"],
+      "props": ["client", "title", "summary", "services", "outcomes", "image", "href"],
+      "responsive": {
+        "mobile": "Stack content.",
+        "tablet": "Responsive card grid.",
+        "desktop": "Editorial case-study grid."
+      },
+      "accessibility": {
+        "requirements": [
+          "Images require appropriate alternative text.",
+          "Interactive case studies require keyboard access."
+        ]
+      },
+      "usageRules": [
+        "Use verified information only.",
+        "Do not invent client names, logos, metrics, outcomes, dates, or project values.",
+        "Use REQUIRES_INPUT when evidence is unavailable."
+      ]
+    },
+    {
+      "id": "TES-001",
+      "name": "Testimonial",
+      "category": "content",
+      "purpose": "Present approved client or stakeholder testimonial.",
+      "variants": ["default"],
+      "states": ["default"],
+      "props": ["quote", "name", "role", "company", "image"],
+      "responsive": {
+        "mobile": "Single-column.",
+        "tablet": "Responsive layout.",
+        "desktop": "Structured testimonial presentation."
+      },
+      "accessibility": {
+        "requirements": [
+          "Quote must remain readable.",
+          "Images require appropriate alternative text."
+        ]
+      },
+      "usageRules": [
+        "Only approved real testimonials may be used.",
+        "Never fabricate testimonials."
+      ]
+    },
+    {
+      "id": "FORM-001",
+      "name": "ConsultationForm",
+      "category": "conversion",
+      "purpose": "Capture qualified consultation leads.",
+      "variants": ["consultation"],
+      "states": ["default", "focus", "filled", "error", "disabled", "loading", "success"],
+      "props": ["fields", "submitLabel", "successMessage", "errorMessage"],
+      "responsive": {
+        "mobile": "Single-column fields.",
+        "tablet": "Responsive form grid where appropriate.",
+        "desktop": "Structured form layout with clear hierarchy."
+      },
+      "accessibility": {
+        "requirements": [
+          "Every field requires an accessible label.",
+          "Errors must be associated with fields.",
+          "Focus must be visible.",
+          "Submission state must be communicated.",
+          "Success state must be accessible."
+        ]
+      },
+      "usageRules": [
+        "Primary conversion action is Book a Free Consultation.",
+        "Do not request unnecessary information."
+      ]
+    },
+    {
+      "id": "INP-001",
+      "name": "TextInput",
+      "category": "form",
+      "purpose": "Capture short text input.",
+      "variants": ["default"],
+      "states": ["default", "focus", "filled", "error", "disabled", "success"],
+      "props": ["label", "name", "type", "placeholder", "required", "value", "error", "helpText"],
+      "responsive": {
+        "mobile": "Full available width.",
+        "tablet": "Responsive width.",
+        "desktop": "Follow form grid."
+      },
+      "accessibility": {
+        "requirements": [
+          "Visible or programmatically associated label.",
+          "Error must be programmatically associated.",
+          "Use appropriate input type."
+        ]
+      },
+      "usageRules": [
+        "Avoid placeholder-only labeling."
+      ]
+    },
+    {
+      "id": "TXT-001",
+      "name": "Textarea",
+      "category": "form",
+      "purpose": "Capture longer business or project context.",
+      "variants": ["default"],
+      "states": ["default", "focus", "filled", "error", "disabled", "success"],
+      "props": ["label", "name", "placeholder", "required", "value", "error", "helpText", "rows"],
+      "responsive": {
+        "mobile": "Full width.",
+        "tablet": "Responsive width.",
+        "desktop": "Follow form grid."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use associated label.",
+          "Provide accessible error messaging."
+        ]
+      },
+      "usageRules": [
+        "Use for project/business context or optional message."
+      ]
+    },
+    {
+      "id": "SEL-001",
+      "name": "Select",
+      "category": "form",
+      "purpose": "Allow selection from predefined options.",
+      "variants": ["default"],
+      "states": ["default", "focus", "filled", "error", "disabled"],
+      "props": ["label", "name", "options", "required", "value", "error"],
+      "responsive": {
+        "mobile": "Full width and touch-friendly.",
+        "tablet": "Responsive.",
+        "desktop": "Follow form grid."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use native or fully accessible select behavior.",
+          "Provide associated label."
+        ]
+      },
+      "usageRules": [
+        "Use only where predefined choices improve the form experience."
+      ]
+    },
+    {
+      "id": "CHK-001",
+      "name": "Checkbox",
+      "category": "form",
+      "purpose": "Capture optional boolean or multi-select choices.",
+      "variants": ["default"],
+      "states": ["default", "focus", "checked", "disabled", "error"],
+      "props": ["label", "name", "value", "checked", "required"],
+      "responsive": {
+        "mobile": "Maintain adequate touch target.",
+        "tablet": "Standard.",
+        "desktop": "Standard."
+      },
+      "accessibility": {
+        "requirements": [
+          "Provide visible label.",
+          "Support keyboard interaction."
+        ]
+      },
+      "usageRules": [
+        "Use only when the information is necessary."
+      ]
+    },
+    {
+      "id": "RAD-001",
+      "name": "Radio",
+      "category": "form",
+      "purpose": "Capture one selection from a mutually exclusive group.",
+      "variants": ["default"],
+      "states": ["default", "focus", "selected", "disabled", "error"],
+      "props": ["label", "name", "value", "checked"],
+      "responsive": {
+        "mobile": "Maintain adequate touch target.",
+        "tablet": "Standard.",
+        "desktop": "Standard."
+      },
+      "accessibility": {
+        "requirements": [
+          "Provide visible group labeling.",
+          "Support keyboard interaction."
+        ]
+      },
+      "usageRules": [
+        "Use only when mutually exclusive choices are necessary."
+      ]
+    },
+    {
+      "id": "ACC-001",
+      "name": "Accordion",
+      "category": "interaction",
+      "purpose": "Reveal secondary information without overwhelming the page.",
+      "variants": ["default"],
+      "states": ["collapsed", "expanded", "focus", "disabled"],
+      "props": ["title", "content", "defaultOpen"],
+      "responsive": {
+        "mobile": "Full width.",
+        "tablet": "Full available width.",
+        "desktop": "Use within appropriate content container."
+      },
+      "accessibility": {
+        "requirements": [
+          "Header must be keyboard accessible.",
+          "Expanded state must be programmatically exposed.",
+          "Content relationship must be understandable."
+        ]
+      },
+      "usageRules": [
+        "Recommended for FAQs and secondary explanatory content.",
+        "Do not hide critical primary content inside accordions."
+      ]
+    },
+    {
+      "id": "MOD-001",
+      "name": "Modal",
+      "category": "interaction",
+      "purpose": "Present focused secondary interactions or confirmations.",
+      "variants": ["default", "confirmation"],
+      "states": ["closed", "open", "focus"],
+      "props": ["title", "content", "actions", "closeLabel"],
+      "responsive": {
+        "mobile": "Use full-width or near-full-screen treatment when appropriate.",
+        "tablet": "Responsive modal width.",
+        "desktop": "Constrained modal width."
+      },
+      "accessibility": {
+        "requirements": [
+          "Trap focus appropriately while open.",
+          "Provide accessible name.",
+          "Support keyboard dismissal where appropriate.",
+          "Return focus to triggering element."
+        ]
+      },
+      "usageRules": [
+        "Use sparingly.",
+        "Do not place core discoverable website content inside unnecessary modals."
+      ]
+    },
+    {
+      "id": "BCR-001",
+      "name": "Breadcrumbs",
+      "category": "navigation",
+      "purpose": "Provide orientation on deeper pages.",
+      "variants": ["default"],
+      "states": ["default", "focus"],
+      "props": ["items", "current"],
+      "responsive": {
+        "mobile": "Simplify or truncate while preserving orientation.",
+        "tablet": "Standard.",
+        "desktop": "Standard."
+      },
+      "accessibility": {
+        "requirements": [
+          "Use semantic navigation landmark.",
+          "Identify current page."
+        ]
+      },
+      "usageRules": [
+        "Do not display on homepage.",
+        "Use on deeper pages when beneficial."
+      ]
+    },
+    {
+      "id": "CTA-001",
+      "name": "FinalCTA",
+      "category": "conversion",
+      "purpose": "Provide a strong closing conversion opportunity.",
+      "variants": ["default", "emphasized"],
+      "states": ["default"],
+      "props": ["eyebrow", "heading", "description", "primaryCta", "secondaryCta"],
+      "responsive": {
+        "mobile": "Stack content and prioritize primary CTA.",
+        "tablet": "Maintain clear hierarchy.",
+        "desktop": "Use strong closing composition."
+      },
+      "accessibility": {
+        "requirements": [
+          "Maintain logical heading hierarchy.",
+          "CTA must be keyboard accessible."
+        ]
+      },
+      "usageRules": [
+        "Primary action should normally be Book a Free Consultation."
+      ]
+    },
+    {
+      "id": "IMG-001",
+      "name": "Image",
+      "category": "foundation",
+      "purpose": "Provide controlled imagery within the design system.",
+      "variants": ["content", "decorative"],
+      "states": ["default"],
+      "props": ["src", "alt", "width", "height", "loading", "aspectRatio"],
+      "responsive": {
+        "mobile": "Maintain appropriate aspect ratio and avoid overflow.",
+        "tablet": "Scale proportionally.",
+        "desktop": "Use approved image treatment."
+      },
+      "accessibility": {
+        "requirements": [
+          "Meaningful images require descriptive alt text.",
+          "Decorative images should not add redundant accessible content."
+        ]
+      },
+      "usageRules": [
+        "Avoid unapproved stock photography.",
+        "Use imagery only where it supports business communication."
+      ]
+    }
+  ],
+  "componentRules": {
+    "general": [
+      "Use semantic component names.",
+      "Prefer reusable components over page-specific duplicates.",
+      "Use design tokens instead of arbitrary visual values.",
+      "Preserve approved UX and content hierarchy.",
+      "Do not invent unverified business claims."
+    ],
+    "validation": [
+      "Brand colors require validation before final implementation.",
+      "Typography requires validation before final implementation.",
+      "Icon library requires validation before final implementation.",
+      "Proposed services require business validation.",
+      "Case studies and testimonials require verified source material."
+    ]
+  },
+  "handoff": {
+    "agent06": {
+      "artifact": "Frontend Architecture input",
+      "requirements": [
+        "Use component IDs as stable implementation references.",
+        "Use design-system.tokens.json as token source.",
+        "Preserve responsive behavior.",
+        "Preserve accessibility requirements."
+      ]
+    },
+    "agent07": {
+      "artifact": "Development input",
+      "requirements": [
+        "Implement reusable components.",
+        "Use approved tokens.",
+        "Do not invent unresolved brand values.",
+        "Follow Agent 06 technical architecture."
+      ]
+    }
+  }
+}
+
