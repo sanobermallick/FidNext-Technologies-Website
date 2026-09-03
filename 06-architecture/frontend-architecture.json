@@ -1,0 +1,397 @@
+{
+"project": {
+"name": "FidNext Technologies Website",
+"artifact": "Frontend Architecture Specification",
+"producing_agent": "06 - Frontend Architect",
+"status": "REVIEW_PENDING",
+"last_updated": "2026-09-03"
+},
+"stack": {
+"framework": "React",
+"language": "TypeScript",
+"build_tool": "Vite",
+"routing": "React Router",
+"styling": "CSS Modules + CSS Custom Properties",
+"state_management": "React component state",
+"form_handling": "Native React form state and validation",
+"animation": "CSS transitions/keyframes + native browser APIs",
+"testing": [
+"Vitest",
+"React Testing Library",
+"Playwright"
+],
+"accessibility_testing": "Playwright + axe integration",
+"code_quality": [
+"ESLint",
+"Prettier"
+],
+"package_manager": "npm"
+},
+"architecture": {
+"hierarchy": [
+"pages",
+"sections",
+"compound_components",
+"primitives",
+"design_tokens"
+],
+"global_state_required": false,
+"third_party_integrations_required": false,
+"design_redesign_allowed": false,
+"unsupported_content_allowed": false,
+"unsupported_functionality_allowed": false
+},
+"routes": [
+{
+"path": "/",
+"page": "HomePage",
+"primary": true
+},
+{
+"path": "/services",
+"page": "ServicesPage",
+"primary": true
+},
+{
+"path": "/services/software-consulting",
+"page": "SoftwareConsultingPage",
+"primary": true
+},
+{
+"path": "/services/custom-software-development",
+"page": "CustomSoftwareDevelopmentPage",
+"primary": true
+},
+{
+"path": "/how-we-work",
+"page": "HowWeWorkPage",
+"primary": true
+},
+{
+"path": "/technology",
+"page": "TechnologyPage",
+"primary": true
+},
+{
+"path": "/about",
+"page": "AboutPage",
+"primary": true
+},
+{
+"path": "/contact",
+"page": "ContactPage",
+"primary": true
+},
+{
+"path": "*",
+"page": "NotFoundPage",
+"primary": false
+}
+],
+"pages": [
+{
+"id": "PAGE-001",
+"name": "HomePage",
+"path": "/",
+"sections": [
+"HeroSection",
+"TrustSection",
+"ProblemsSection",
+"ServicesSection",
+"WhyFidNextSection",
+"HowWeWorkSection",
+"CaseStudiesSection",
+"TechnologySection",
+"TestimonialsSection",
+"InsightsSection",
+"FinalCTASection"
+]
+},
+{
+"id": "PAGE-002",
+"name": "ServicesPage",
+"path": "/services"
+},
+{
+"id": "PAGE-003",
+"name": "SoftwareConsultingPage",
+"path": "/services/software-consulting"
+},
+{
+"id": "PAGE-004",
+"name": "CustomSoftwareDevelopmentPage",
+"path": "/services/custom-software-development"
+},
+{
+"id": "PAGE-005",
+"name": "HowWeWorkPage",
+"path": "/how-we-work"
+},
+{
+"id": "PAGE-006",
+"name": "TechnologyPage",
+"path": "/technology"
+},
+{
+"id": "PAGE-007",
+"name": "AboutPage",
+"path": "/about"
+},
+{
+"id": "PAGE-008",
+"name": "ContactPage",
+"path": "/contact"
+},
+{
+"id": "PAGE-009",
+"name": "NotFoundPage",
+"path": "*"
+}
+],
+"components": [
+{
+"id": "LOGO-001",
+"name": "Logo",
+"layer": "primitive"
+},
+{
+"id": "BTN-001",
+"name": "PrimaryButton",
+"layer": "primitive"
+},
+{
+"id": "BTN-002",
+"name": "SecondaryButton",
+"layer": "primitive"
+},
+{
+"id": "BTN-003",
+"name": "TextButton",
+"layer": "primitive"
+},
+{
+"id": "BTN-004",
+"name": "IconButton",
+"layer": "primitive"
+},
+{
+"id": "LINK-001",
+"name": "TextLink",
+"layer": "primitive"
+},
+{
+"id": "INP-001",
+"name": "Input",
+"layer": "primitive"
+},
+{
+"id": "TXT-001",
+"name": "Textarea",
+"layer": "primitive"
+},
+{
+"id": "SEL-001",
+"name": "Select",
+"layer": "primitive"
+},
+{
+"id": "CHK-001",
+"name": "Checkbox",
+"layer": "primitive"
+},
+{
+"id": "RAD-001",
+"name": "Radio",
+"layer": "primitive"
+},
+{
+"id": "SRV-001",
+"name": "ServiceBlock",
+"layer": "compound"
+},
+{
+"id": "PRB-001",
+"name": "ProblemBlock",
+"layer": "compound"
+},
+{
+"id": "PRC-001",
+"name": "ProcessStep",
+"layer": "compound"
+},
+{
+"id": "TEC-001",
+"name": "TechnologyItem",
+"layer": "compound"
+},
+{
+"id": "CAS-001",
+"name": "CaseStudyCard",
+"layer": "compound"
+},
+{
+"id": "TES-001",
+"name": "Testimonial",
+"layer": "compound"
+},
+{
+"id": "FORM-001",
+"name": "ConsultationForm",
+"layer": "compound"
+},
+{
+"id": "SEC-001",
+"name": "SectionHeader",
+"layer": "compound"
+},
+{
+"id": "CTA-001",
+"name": "FinalCTA",
+"layer": "compound"
+},
+{
+"id": "HERO-001",
+"name": "Hero",
+"layer": "compound"
+},
+{
+"id": "CARD-001",
+"name": "BaseCard",
+"layer": "primitive_or_foundation"
+},
+{
+"id": "HDR-001",
+"name": "Header",
+"layer": "compound"
+},
+{
+"id": "NAV-001",
+"name": "Navigation",
+"layer": "compound"
+},
+{
+"id": "FTR-001",
+"name": "Footer",
+"layer": "compound"
+},
+{
+"id": "ACC-001",
+"name": "Accordion",
+"layer": "compound"
+},
+{
+"id": "MOD-001",
+"name": "Modal",
+"layer": "compound"
+},
+{
+"id": "BCR-001",
+"name": "Breadcrumbs",
+"layer": "compound"
+},
+{
+"id": "IMG-001",
+"name": "Image",
+"layer": "primitive"
+}
+],
+"tokens_implementation": {
+"source_of_truth": "05-design-system/design-system.tokens.json",
+"human_reference": "05-design-system/design-system.md",
+"implementation": "CSS Custom Properties",
+"output": "src/styles/tokens.css",
+"unresolved_values": "REQUIRES_INPUT",
+"arbitrary_token_values_allowed": false
+},
+"responsive": {
+"breakpoints": {
+"mobile": "0-767px",
+"tablet": "768-1023px",
+"desktop": "1024-1279px",
+"large_desktop": "1280px+"
+},
+"grid": {
+"mobile": {
+"columns": 4,
+"gutter": "16px"
+},
+"tablet": {
+"columns": 8,
+"gutter": "24px"
+},
+"desktop": {
+"columns": 12,
+"gutter": "24px"
+}
+},
+"containers": {
+"page": "1280px",
+"content": "1200px",
+"reading": "720px"
+}
+},
+"assets": [
+{
+"type": "images",
+"location": "src/assets/images/"
+},
+{
+"type": "icons",
+"location": "src/assets/icons/"
+},
+{
+"type": "fonts",
+"location": "src/assets/fonts/"
+}
+],
+"integrations": [],
+"seo": {
+"route_specific_metadata": true,
+"required": [
+"title",
+"meta_description",
+"canonical",
+"open_graph"
+],
+"semantic_headings": true
+},
+"accessibility": {
+"semantic_html": true,
+"keyboard_navigation": true,
+"visible_focus": true,
+"form_labels": true,
+"reduced_motion": true,
+"accessible_error_messages": true
+},
+"performance": {
+"code_splitting": true,
+"image_optimization": true,
+"lazy_loading": true,
+"font_optimization": true,
+"minimal_third_party_scripts": true
+},
+"implementation_order": [
+"project_initialization",
+"global_styles_and_tokens",
+"application_shell",
+"header_and_navigation",
+"footer",
+"primitive_components",
+"compound_components",
+"homepage_sections",
+"homepage_composition",
+"services_page",
+"service_detail_pages",
+"how_we_work_page",
+"technology_page",
+"about_page",
+"contact_page",
+"404_page",
+"responsive_refinement",
+"accessibility_refinement",
+"seo_metadata",
+"performance_optimization",
+"automated_tests",
+"production_build_validation"
+]
+}
